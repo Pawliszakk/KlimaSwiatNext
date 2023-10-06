@@ -3,3 +3,13 @@
 	padding: 0;
 	margin: 0;
 }
+html {
+	font-size: 62.5%;
+}
+
+:root {
+	--main-color: #008490;
+	--main-color-darker: #037782;
+	--main-color-lighter: #0399a7;
+	--white: #fff;
+}
