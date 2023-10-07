@@ -9,9 +9,9 @@ const Hero = () => {
 
 	const backgrounds = [
 		'url(assets/hero/hero1.jpg)',
-		'url(assets/hero/hero2.jpg)',
-		'url(assets/hero/hero3.jpg)',
-		'url(assets/hero/hero4.jpg)',
+		'url(assets/hero/hero2.JPG)',
+		'url(assets/hero/hero3.JPG)',
+		'url(assets/hero/hero4.JPG)',
 	];
 
 	const slideChangeHandler = (slide: number) => {
@@ -21,20 +21,20 @@ const Hero = () => {
 		setImage(slide);
 	};
 
-	// useEffect(() => {
-	// 	let slide = image;
-	// 	if (slide === 3) {
-	// 		slide = 0;
-	// 	}
-	// 	if (slide !== 0) {
-	// 		slide++;
-	// 	}
-	// 	const sliderTimer = setTimeout(() => {
-	// 		slideChangeHandler(slide);
-	// 	}, 5000);
+	useEffect(() => {
+		let slide = image;
+		if (slide === 3) {
+			slide = 0;
+		}
+		if (slide !== 0) {
+			slide++;
+		}
+		const sliderTimer = setTimeout(() => {
+			slideChangeHandler(slide);
+		}, 5000);
 
-	// 	return () => clearTimeout(sliderTimer);
-	// }, [slideChangeHandler]);
+		return () => clearTimeout(sliderTimer);
+	}, [slideChangeHandler]);
 
 	return (
 		<header
