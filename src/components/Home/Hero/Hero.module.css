@@ -32,4 +32,11 @@
 }
 .box {
 	z-index: 5;
+	text-align: center;
+}
+.buttons {
+	margin-top: 5rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }

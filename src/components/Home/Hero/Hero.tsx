@@ -34,6 +34,9 @@ const Hero = () => {
 				<Content index={image} />
 				<div className={classes.buttons}>
 					<SpecialButton href="#contact">Skontaktuj się</SpecialButton>
+					<SpecialButton empty href="#contact">
+						Dowiedz się więcej
+					</SpecialButton>
 				</div>
 			</div>
 			<SliderButtons onSlideChange={slideChangeHandler} index={image} />

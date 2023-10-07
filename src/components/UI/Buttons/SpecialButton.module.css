@@ -3,9 +3,14 @@
 	background-color: var(--main-color-darker);
 	font-size: 2rem;
 	padding: 0.5em 1em;
+	transition: background-color 0.3s, border-color 0.3s;
+	border: 2px solid transparent;
 }
-
+.button:hover {
+	background-color: var(--main-color-darkest);
+	border-color: var(--white);
+}
 .empty {
 	background-color: transparent;
-	border: 3px solid var(--white);
+	border: 2px solid var(--white);
 }

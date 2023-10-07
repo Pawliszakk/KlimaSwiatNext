@@ -1,14 +1,16 @@
 .header {
 	position: fixed;
 	top: 0;
-	height: 8vh;
+	height: 7vh;
 	left: 0;
 	width: 100%;
 	background-color: var(--main-color-darker);
+	z-index: 2000;
 }
 
 .header nav {
 	margin: 0 auto;
+	height: 100%;
 	max-width: 1400px;
 	display: flex;
 	justify-content: space-around;
