@@ -1,7 +1,14 @@
+import classes from './Nav.module.css';
+import NavList from './NavItems/NavList';
+import NavLogo from './NavItems/NavLogo';
+
 const Nav = () => {
 	return (
-		<header>
-			<nav>to jest nav</nav>
+		<header className={classes.header}>
+			<nav>
+				<NavLogo />
+				<NavList />
+			</nav>
 		</header>
 	);
 };

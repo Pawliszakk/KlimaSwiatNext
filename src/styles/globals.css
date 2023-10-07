@@ -4,11 +4,11 @@
 	margin: 0;
 }
 :root {
-	--main-color: #008490;
-	--main-color-darker: #037782;
-	--main-color-darkest: #014b52;
-	--main-color-lighter: #0399a7;
-	--main-color-lightest: #02adbd;
+	--main-color: #4169e1;
+	--main-color-darker: #1e47c2;
+	--main-color-darkest: #0a2370;
+	--main-color-lighter: #5880f8;
+	--main-color-lightest: #7f9cf3;
 	--white: #fff;
 }
 html {
@@ -34,5 +34,5 @@ html::-webkit-scrollbar-track:hover {
 }
 
 body {
-	min-height: 200vh;
+	margin-top: 5vh;
 }
