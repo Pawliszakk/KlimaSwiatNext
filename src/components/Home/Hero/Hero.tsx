@@ -4,6 +4,7 @@ import { FaSnowflake } from 'react-icons/fa';
 import Content from './Content';
 import SliderButtons from './SliderButtons';
 import SpecialButton from '@/components/UI/Buttons/SpecialButton';
+import SlideAnimation from '@/components/UI/Animations/SlideAnimation';
 const Hero = () => {
 	const [image, setImage] = useState(0);
 
@@ -53,19 +54,22 @@ const Hero = () => {
 			style={{ backgroundImage: backgrounds[image] }}
 		>
 			<div className={classes.box}>
-				<p>
-					<FaSnowflake />
-					Klima<span>Świat</span>
-				</p>
+				<SlideAnimation>
+					<p>
+						<FaSnowflake />
+						Klima<span>Świat</span>
+					</p>
+				</SlideAnimation>
 				<Content index={image} />
-				<div className={classes.buttons}>
+				<SlideAnimation className={classes.buttons}>
+					{' '}
 					<SpecialButton className={classes.btn} href="#contact">
 						Skontaktuj się
 					</SpecialButton>
 					<SpecialButton className={classes.btn} empty href="#contact">
 						Dowiedz się więcej
 					</SpecialButton>
-				</div>
+				</SlideAnimation>
 			</div>
 			<SliderButtons onSlideChange={slideChangeHandler} index={image} />
 		</header>

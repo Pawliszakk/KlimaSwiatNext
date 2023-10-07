@@ -1,3 +1,4 @@
+import SlideFromBottom from '@/components/UI/Animations/SlideFromBottom';
 import classes from './SliderButtons.module.css';
 
 interface SliderButtonsProps {
@@ -12,7 +13,7 @@ const SliderButtons: React.FC<SliderButtonsProps> = ({
 	const buttons = ['1', '2', '3', '4'];
 
 	return (
-		<div className={classes.box}>
+		<SlideFromBottom className={classes.box}>
 			{buttons.map((btn, i) => (
 				<button
 					key={i}
@@ -22,7 +23,7 @@ const SliderButtons: React.FC<SliderButtonsProps> = ({
 					{btn}
 				</button>
 			))}
-		</div>
+		</SlideFromBottom>
 	);
 };
 
