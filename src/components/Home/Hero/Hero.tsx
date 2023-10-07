@@ -27,7 +27,7 @@ const Hero = () => {
 			style={{ backgroundImage: backgrounds[image] }}
 		>
 			<div className={classes.box}>
-				<p>
+				<p className={classes.logo}>
 					<FaSnowflake />
 					Klima<span>Świat</span>
 				</p>

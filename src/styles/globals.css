@@ -28,10 +28,7 @@ html::-webkit-scrollbar-thumb:hover {
 	background-color: var(--main-color-lightest);
 }
 html::-webkit-scrollbar-track {
-	background: var(--main-color);
-}
-html::-webkit-scrollbar-track:hover {
-	background-color: var(--main-color-darker);
+	background: var(--main-color-darker);
 }
 
 body {
