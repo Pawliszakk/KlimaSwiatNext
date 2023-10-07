@@ -24,12 +24,9 @@ const Hero = () => {
 	useEffect(() => {
 		let slide = image;
 		if (slide === 3) {
-			slide = 0;
+			slide = -1;
 		}
-		if (slide !== 0) {
-			slide++;
-		}
-		console.log(slide);
+		slide++;
 		const sliderTimer = setTimeout(() => {
 			slideChangeHandler(slide);
 		}, 5000);
