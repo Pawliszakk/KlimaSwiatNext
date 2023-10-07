@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import classes from './Hero.module.css';
 import { FaSnowflake } from 'react-icons/fa';
 import Content from './Content';
@@ -21,20 +21,36 @@ const Hero = () => {
 		setImage(slide);
 	};
 
+	useEffect(() => {
+		let slide = image;
+		slide++;
+		if (slide === 3) {
+			slide = 0;
+		}
+
+		const sliderTimer = setTimeout(() => {
+			slideChangeHandler(slide);
+		}, 5000);
+
+		return () => clearTimeout(sliderTimer);
+	}, [slideChangeHandler, setImage]);
+
 	return (
 		<header
 			className={classes.header}
 			style={{ backgroundImage: backgrounds[image] }}
 		>
 			<div className={classes.box}>
-				<p className={classes.logo}>
+				<p>
 					<FaSnowflake />
 					Klima<span>Świat</span>
 				</p>
 				<Content index={image} />
 				<div className={classes.buttons}>
-					<SpecialButton href="#contact">Skontaktuj się</SpecialButton>
-					<SpecialButton empty href="#contact">
+					<SpecialButton className={classes.btn} href="#contact">
+						Skontaktuj się
+					</SpecialButton>
+					<SpecialButton className={classes.btn} empty href="#contact">
 						Dowiedz się więcej
 					</SpecialButton>
 				</div>

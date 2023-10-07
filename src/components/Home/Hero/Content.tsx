@@ -12,7 +12,7 @@ const Content: React.FC<ContentProps> = ({ index }) => {
 		'Profesjonalne doradztwo i kompleksowe rozwiązania dla każdego klienta',
 	];
 
-	return <p className={classes.content}>{text[index]}</p>;
+	return <h1 className={classes.content}>{text[index]}</h1>;
 };
 
 export default Content;

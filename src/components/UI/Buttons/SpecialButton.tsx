@@ -5,16 +5,20 @@ interface SpecialButtonProps {
 	children: ReactNode;
 	href: string;
 	empty?: boolean;
+	className?: string;
 }
 
 const SpecialButton: React.FC<SpecialButtonProps> = ({
 	children,
 	href,
 	empty,
+	className,
 }) => {
 	return (
 		<Link
-			className={`${classes.button} ${empty ? classes.empty : null}`}
+			className={`${classes.button} ${
+				empty ? classes.empty : null
+			} ${className}`}
 			href={href}
 		>
 			{children}
