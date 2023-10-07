@@ -29,6 +29,7 @@ const Hero = () => {
 		if (slide !== 0) {
 			slide++;
 		}
+		console.log(slide);
 		const sliderTimer = setTimeout(() => {
 			slideChangeHandler(slide);
 		}, 5000);
