@@ -3,9 +3,10 @@ import { createPortal } from 'react-dom';
 
 interface PortalProps {
 	children: ReactNode;
+	id: string;
 }
 
-const Portal: React.FC<PortalProps> = ({ children }) => {
+const Portal: React.FC<PortalProps> = ({ children, id }) => {
 	const [mounted, setMounted] = useState(false);
 
 	useEffect(() => {
@@ -13,9 +14,7 @@ const Portal: React.FC<PortalProps> = ({ children }) => {
 
 		return () => setMounted(false);
 	}, []);
-	return mounted
-		? createPortal(children, document.getElementById('overlay')!)
-		: null;
+	return mounted ? createPortal(children, document.getElementById(id)!) : null;
 };
 
 export default Portal;
