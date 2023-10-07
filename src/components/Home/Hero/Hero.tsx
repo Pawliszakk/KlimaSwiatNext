@@ -21,20 +21,20 @@ const Hero = () => {
 		setImage(slide);
 	};
 
-	useEffect(() => {
-		let slide = image;
-		if (slide === 3) {
-			slide = 0;
-		}
-		if (slide !== 0) {
-			slide++;
-		}
-		const sliderTimer = setTimeout(() => {
-			slideChangeHandler(slide);
-		}, 5000);
+	// useEffect(() => {
+	// 	let slide = image;
+	// 	if (slide === 3) {
+	// 		slide = 0;
+	// 	}
+	// 	if (slide !== 0) {
+	// 		slide++;
+	// 	}
+	// 	const sliderTimer = setTimeout(() => {
+	// 		slideChangeHandler(slide);
+	// 	}, 5000);
 
-		return () => clearTimeout(sliderTimer);
-	}, [slideChangeHandler]);
+	// 	return () => clearTimeout(sliderTimer);
+	// }, [slideChangeHandler]);
 
 	return (
 		<header
