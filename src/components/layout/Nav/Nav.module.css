@@ -10,12 +10,20 @@
 .header nav {
 	height: 100%;
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 1400px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 }
 
 .burger {
 	color: var(--white);
+}
+@media (min-width: 400px) {
+}
+
+@media (min-width: 768px) {
+	.burger {
+		display: none;
+	}
 }

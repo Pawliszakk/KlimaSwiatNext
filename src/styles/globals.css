@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;300;700&display=swap');
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -35,5 +36,5 @@ html::-webkit-scrollbar-track:hover {
 
 body {
 	margin-top: 5vh;
-	min-height: 200vh;
+	font-family: 'Sora', sans-serif;
 }

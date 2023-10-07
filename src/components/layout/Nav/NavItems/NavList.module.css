@@ -1,3 +1,15 @@
+.list ul {
+	list-style-type: none;
+}
+.list ul li {
+	text-transform: uppercase;
+	text-align: center;
+}
+.list ul a {
+	text-decoration: none;
+	color: #fff;
+}
+
 @media (max-width: 768px) {
 	.list {
 		position: fixed;
@@ -8,15 +20,56 @@
 		height: 100vh;
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
 		background-color: var(--main-color);
 		transform: translateX(120%);
 		transition: transform 0.3s;
 	}
 	.list ul {
-		list-style-type: none;
+		margin-top: 4rem;
+	}
+	.list ul a {
+		font-size: 3rem;
+	}
+	.list ul li {
+		padding: 2em;
 	}
 	.open {
 		transform: translateX(0);
+	}
+}
+
+@media (min-width: 768px) {
+	.list ul {
+		display: flex;
+		gap: 2em;
+	}
+	.list ul li a {
+		font-size: 1.8rem;
+		position: relative;
+	}
+	.list ul li a::before {
+		position: absolute;
+		content: '';
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		transform: scaleX(0);
+		transform-origin: right;
+		background-color: var(--white);
+		transition: transform 0.3s;
+	}
+	.list ul li:hover a::before {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+}
+@media (min-width: 1200px) {
+	.list ul {
+		gap: 4em;
+	}
+	.list ul li a {
+		font-size: 2rem;
 	}
 }
