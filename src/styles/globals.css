@@ -39,5 +39,8 @@ body {
 	font-family: 'Sora', sans-serif;
 }
 main {
-	margin-top: 7vh;
+	z-index: -2;
+}
+a {
+	text-decoration: none;
 }

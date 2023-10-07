@@ -1,14 +1,13 @@
 .header {
 	position: fixed;
 	top: 0;
+	height: 8vh;
 	left: 0;
 	width: 100%;
-	height: 7vh;
 	background-color: var(--main-color-darker);
 }
 
 .header nav {
-	height: 100%;
 	margin: 0 auto;
 	max-width: 1400px;
 	display: flex;

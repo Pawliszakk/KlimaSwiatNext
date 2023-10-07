@@ -1,0 +1,11 @@
+.button {
+	color: var(--white);
+	background-color: var(--main-color-darker);
+	font-size: 2rem;
+	padding: 0.5em 1em;
+}
+
+.empty {
+	background-color: transparent;
+	border: 3px solid var(--white);
+}

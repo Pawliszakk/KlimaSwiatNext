@@ -1,0 +1,26 @@
+.box {
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	z-index: 12;
+	display: flex;
+}
+.box button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	padding: 0.5em;
+	margin: 1em;
+	background-color: transparent;
+	color: var(--white);
+	border: 2px solid var(--white);
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.box button.active {
+	background-color: var(--main-color-darker);
+}
