@@ -23,10 +23,10 @@ const Hero = () => {
 
 	useEffect(() => {
 		let slide = image;
-		slide++;
 		if (slide === 3) {
 			slide = 0;
 		}
+		slide++;
 
 		const sliderTimer = setTimeout(() => {
 			slideChangeHandler(slide);
