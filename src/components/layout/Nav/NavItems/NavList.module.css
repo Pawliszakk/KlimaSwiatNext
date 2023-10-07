@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+	.list {
+		position: fixed;
+		top: 0;
+		left: 0;
+		margin-top: 7vh;
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--main-color);
+		transform: translateX(120%);
+		transition: transform 0.3s;
+	}
+	.list ul {
+		list-style-type: none;
+	}
+	.open {
+		transform: translateX(0);
+	}
+}
