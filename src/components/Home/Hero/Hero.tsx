@@ -22,6 +22,14 @@ const Hero = () => {
 	};
 
 	useEffect(() => {
+		const img = new Image();
+		img.src = 'assets/hero/hero1.jpg';
+		img.src = 'assets/hero/hero2.JPG';
+		img.src = 'assets/hero/hero3.JPG';
+		img.src = 'assets/hero/hero4.JPG';
+	}, []);
+
+	useEffect(() => {
 		let slide = image;
 		if (slide === 3) {
 			slide = -1;
