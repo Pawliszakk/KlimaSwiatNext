@@ -26,14 +26,15 @@ const Hero = () => {
 		if (slide === 3) {
 			slide = 0;
 		}
-		slide++;
-
+		if (slide !== 0) {
+			slide++;
+		}
 		const sliderTimer = setTimeout(() => {
 			slideChangeHandler(slide);
 		}, 5000);
 
 		return () => clearTimeout(sliderTimer);
-	}, [slideChangeHandler, setImage]);
+	}, [slideChangeHandler]);
 
 	return (
 		<header
