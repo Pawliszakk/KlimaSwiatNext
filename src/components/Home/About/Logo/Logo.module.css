@@ -1,0 +1,10 @@
+.box {
+	background-color: var(--main-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40vh;
+}
+.box img {
+	width: 250px;
+}

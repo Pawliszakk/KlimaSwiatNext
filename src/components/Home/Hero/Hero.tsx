@@ -66,7 +66,7 @@ const Hero = () => {
 					<SpecialButton className={classes.btn} href="#contact">
 						Skontaktuj się
 					</SpecialButton>
-					<SpecialButton className={classes.btn} empty href="#contact">
+					<SpecialButton className={classes.btn} empty href="#about">
 						Dowiedz się więcej
 					</SpecialButton>
 				</SlideAnimation>
