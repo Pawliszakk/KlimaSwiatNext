@@ -22,11 +22,16 @@ const Hero = () => {
 	};
 
 	useEffect(() => {
-		const img = new Image();
-		img.src = 'assets/hero/hero1.jpg';
-		img.src = 'assets/hero/hero2.JPG';
-		img.src = 'assets/hero/hero3.JPG';
-		img.src = 'assets/hero/hero4.JPG';
+		const images = [
+			'assets/hero/hero1.jpg',
+			'assets/hero/hero2.JPG',
+			'assets/hero/hero3.JPG',
+			'assets/hero/hero4.JPG',
+		];
+		images.forEach((image) => {
+			const img = new Image();
+			img.src = image;
+		});
 	}, []);
 
 	useEffect(() => {
