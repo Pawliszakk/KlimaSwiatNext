@@ -40,9 +40,7 @@ main {
 	margin-top: 7vh;
 	z-index: -2;
 }
-section {
-	overflow-x: hidden;
-}
+
 a {
 	text-decoration: none;
 }
