@@ -1,11 +1,14 @@
 .offer {
-	background-color: var(--main-color-darker);
+	background-color: var(--main-color-lighter);
 	text-align: center;
-	height: 200vh;
+	padding: 4em 0;
 }
 .box {
+	margin: 4rem auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 10rem;
+	max-width: 1200px;
 }

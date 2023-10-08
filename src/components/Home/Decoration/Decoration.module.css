@@ -38,7 +38,7 @@
 }
 
 .shapeFill {
-	fill: var(--main-color-darker);
+	fill: var(--main-color-lighter);
 }
 
 /** For tablet devices **/

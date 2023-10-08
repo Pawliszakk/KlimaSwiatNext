@@ -42,7 +42,7 @@ const Offer = () => {
 			icon: <FaTemperatureArrowUp />,
 			title: 'pompy ciepła',
 			description:
-				'Jesteśmy specjalistami w zakresie instalacji pomp ciepła i zapewniamy kompleksową obsługę, począwszy od projektu aż po montaż, aby zapewnić Ci efektywność energetyczną i komfort.',
+				'Jesteśmy specjalistami w zakresie instalacji pomp ciepła i zapewniamy kompleksową obsługę, od projektu aż po montaż, aby zapewnić Ci efektywność energetyczną i komfort.',
 		},
 		{
 			icon: <FaWarehouse />,
@@ -58,6 +58,7 @@ const Offer = () => {
 			<div className={classes.box}>
 				{offerData.map((offer, i) => (
 					<OfferCard
+						key={i}
 						index={i}
 						title={offer.title}
 						description={offer.description}

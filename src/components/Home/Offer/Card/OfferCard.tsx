@@ -1,5 +1,6 @@
 import SpecialButton from '@/components/UI/Buttons/SpecialButton';
 import classes from './OfferCard.module.css';
+import SlideFromTop from '@/components/UI/Animations/SlideFromTop';
 
 interface OfferCardProps {
 	index: number;
@@ -15,13 +16,13 @@ const OfferCard: React.FC<OfferCardProps> = ({
 	description,
 }) => {
 	return (
-		<div className={classes.card}>
+		<SlideFromTop className={classes.card} index={index}>
 			{icon}
 			<h2 className={classes.title}>{title}</h2>
 			<hr />
 			<p className={classes.text}>{description}</p>
 			<SpecialButton href="/#offer">Skontaktuj się</SpecialButton>
-		</div>
+		</SlideFromTop>
 	);
 };
 
