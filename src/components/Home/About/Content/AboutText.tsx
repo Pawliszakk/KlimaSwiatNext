@@ -6,21 +6,17 @@ import SlideAnimation from '@/components/UI/Animations/SlideAnimation';
 const AboutText = () => {
 	return (
 		<div className={classes.box}>
-			<div className={classes.container}>
-				<SlideAnimation left>
-					<SectionTitle>O nas</SectionTitle>
-				</SlideAnimation>
-				<SlideAnimation>
-					<p className={classes.text}>
-						Firma Klima Świat została założona aby projektować, dobierać oraz
-						serwisować państwa urządzenia klimatyzacyjne. Dzięki wieloletniemu
-						doświadczeniu, szkoleniom, służymy profesjonalną obsługą dla Państwa
-						od projektu do wykonania powierzonego nam zadania.
-					</p>
-				</SlideAnimation>
+			<SlideAnimation left className={classes.container}>
+				<SectionTitle>O nas</SectionTitle>
+				<p className={classes.text}>
+					Firma Klima Świat została założona aby projektować, dobierać oraz
+					serwisować państwa urządzenia klimatyzacyjne. Dzięki wieloletniemu
+					doświadczeniu, szkoleniom, służymy profesjonalną obsługą dla Państwa
+					od projektu do wykonania powierzonego nam zadania.
+				</p>
 
 				<Counter />
-			</div>
+			</SlideAnimation>
 		</div>
 	);
 };
