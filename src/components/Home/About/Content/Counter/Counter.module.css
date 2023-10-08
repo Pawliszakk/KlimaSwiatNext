@@ -7,3 +7,9 @@
 	flex-flow: wrap row;
 	gap: 2rem;
 }
+
+@media (min-width: 992px) {
+	.counter {
+		margin-left: 2em;
+	}
+}

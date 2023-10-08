@@ -1,0 +1,9 @@
+@media (min-width: 992px) {
+	.about {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--main-color);
+        z-index: -1;
+	}
+}

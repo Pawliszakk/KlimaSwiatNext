@@ -4,7 +4,7 @@ import Logo from './Logo/Logo';
 
 const About = () => {
 	return (
-		<section id="about">
+		<section id="about" className={classes.about}>
 			<Logo />
 			<AboutText />
 		</section>
