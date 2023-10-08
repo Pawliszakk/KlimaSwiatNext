@@ -53,12 +53,12 @@ const Counter = () => {
 	return (
 		<div className={classes.counter} ref={counterRef}>
 			{counterData.map((item, i) => (
-				<CounterItem key={i} icon={item.icon} text={item.text}>
+				<CounterItem key={i} index={i} icon={item.icon} text={item.text}>
 					{isCounterOn && (
 						<CountUp
 							start={item.start}
 							end={item.end}
-							duration={4}
+							duration={6}
 							delay={0}
 							suffix={item.suffix}
 						/>

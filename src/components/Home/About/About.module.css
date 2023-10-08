@@ -1,9 +1,50 @@
+.about {
+	position: relative;
+}
+
+.divider {
+	z-index: 5;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.divider svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 66px;
+}
+
+.shapeFill {
+	fill: #ffffff;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+	.divider svg {
+		width: calc(100% + 1.3px);
+		height: 47px;
+	}
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+	.divider svg {
+		width: calc(100% + 1.3px);
+		height: 33px;
+	}
+}
+
 @media (min-width: 992px) {
 	.about {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		background-color: var(--main-color);
-        z-index: -1;
+		z-index: -1;
 	}
 }
