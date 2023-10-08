@@ -3,13 +3,12 @@
 	background-image: url('/assets/hero/hero-about.JPG');
 	background-size: cover;
 	background-position: center;
-	height: 50vh;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	flex-direction: column;
 	z-index: -1;
-	padding-top: 2em;
+	padding: 2em 0;
 	color: var(--white);
 }
 .box::before {
@@ -21,7 +20,7 @@
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.8);
 }
-.box p {
+.text {
 	margin-top: 1.5em;
 	z-index: 2;
 	text-align: center;

@@ -1,0 +1,24 @@
+.box {
+	width: 200px;
+	height: 150px;
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1em;
+	text-align: center;
+	padding: 1em 0.2em;
+}
+.box svg {
+	display: block;
+	margin-top: 0.6em;
+	width: 50px;
+	height: 50px;
+}
+.box span {
+	font-size: 3rem;
+}
+.box p {
+	font-size: 1.4rem;
+}

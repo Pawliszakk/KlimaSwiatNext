@@ -6,7 +6,7 @@ const AboutText = () => {
 	return (
 		<div className={classes.box}>
 			<SectionTitle>O nas</SectionTitle>
-			<p>
+			<p className={classes.text}>
 				Firma Klima Świat została założona aby projektować, dobierać oraz
 				serwisować państwa urządzenia klimatyzacyjne. Dzięki wieloletniemu
 				doświadczeniu, szkoleniom, służymy profesjonalną obsługą dla Państwa od
