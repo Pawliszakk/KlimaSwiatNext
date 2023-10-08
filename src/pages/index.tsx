@@ -1,4 +1,4 @@
-import LoadingSpinner from '@/components/UI/Loading/LoadingSpinner';
+import LoadingSpinner from '@/components/UI/LoadingSpinner/LoadingSpinner';
 import dynamic from 'next/dynamic';
 
 const Home = dynamic(() => import('@/components/Home/Home'), {

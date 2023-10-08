@@ -8,6 +8,7 @@
 	transition: background-image 0.6s;
 	background-size: cover;
 	background-position: center;
+	overflow: hidden;
 }
 .header::before {
 	position: absolute;
@@ -46,7 +47,6 @@
 }
 @media (max-width: 576px) {
 	.btn {
-		font-size: 1.6rem;
 		width: 220px;
 		margin: 1em 0;
 		padding: 0.2em 0.5em;

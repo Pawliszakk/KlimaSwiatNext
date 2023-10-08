@@ -10,6 +10,7 @@
 
 .header nav {
 	margin: 0 auto;
+	overflow-y: hidden;
 	height: 100%;
 	max-width: 1400px;
 	display: flex;
