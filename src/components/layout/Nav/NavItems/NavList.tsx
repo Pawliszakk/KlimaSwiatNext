@@ -6,14 +6,12 @@ interface NavListProps {
 	onToggle: () => void;
 }
 
-type Item = { name: string; href: string };
-
 const NavList: React.FC<NavListProps> = ({ isOpen, onToggle }) => {
-	const navItems: Item[] = [
-		{ name: 'O nas', href: '#about-us' },
-		{ name: 'Oferta', href: '#offer' },
+	const navItems = [
+		{ name: 'O nas', href: '/#about-us' },
+		{ name: 'Oferta', href: '/#offer' },
 		{ name: 'Realizacje', href: '/realizacje' },
-		{ name: 'Kontakt', href: '#contact' },
+		{ name: 'Kontakt', href: '/#contact' },
 	];
 
 	return (
