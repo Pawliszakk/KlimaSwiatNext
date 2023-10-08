@@ -13,7 +13,7 @@ const Realizations = () => {
 			<SectionTitle blue>Realizacje</SectionTitle>
 			<div className={classes.box}>
 				{images.map((image, i) => (
-					<div className={classes.image}>
+					<div className={classes.image} key={i}>
 						<img
 							src={image}
 							alt="Zdjęcie wykonanego montażu systemu klimatyzacji"
