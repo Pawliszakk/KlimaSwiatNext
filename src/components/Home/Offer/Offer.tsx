@@ -49,7 +49,7 @@ const Offer = () => {
 			icon: <FaWarehouse />,
 			title: 'garaże z płyty warstwowej',
 			description:
-				'Nasza firma zajmuję się również w kompleksowym projektowaniu, dostosowywaniu, montażu oraz testowaniu nowoczesnych garaży z płyt warstwowych. ',
+				'Nasza firma zajmuję się również w kompleksowym projektowaniem, dostosowywaniem, montażem oraz testowaniem nowoczesnych garaży z płyt warstwowych. ',
 			garage: true,
 		},
 	];
