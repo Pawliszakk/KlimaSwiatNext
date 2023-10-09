@@ -12,7 +12,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 		<>
 			<Nav />
 			<main>{children}</main>
-			{/* <Footer /> */}
+			<Footer />
 			<PhoneIcon />
 		</>
 	);
