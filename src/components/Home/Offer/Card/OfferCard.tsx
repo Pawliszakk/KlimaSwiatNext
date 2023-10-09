@@ -7,6 +7,7 @@ interface OfferCardProps {
 	icon: JSX.Element;
 	title: string;
 	description: string;
+	garage?: boolean;
 }
 
 const OfferCard: React.FC<OfferCardProps> = ({
@@ -14,13 +15,14 @@ const OfferCard: React.FC<OfferCardProps> = ({
 	icon,
 	title,
 	description,
+	garage,
 }) => {
 	return (
 		<SlideFromTop className={classes.card} index={index}>
 			{icon}
-			<h2 className={classes.title}>{title}</h2>
+			<h2 className={` ${garage ? classes.garage : null}`}>{title}</h2>
 			<hr />
-			<p className={classes.text}>{description}</p>
+			<p>{description}</p>
 			<SpecialButton href="/#offer">Skontaktuj się</SpecialButton>
 		</SlideFromTop>
 	);

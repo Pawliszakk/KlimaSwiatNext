@@ -10,6 +10,7 @@ type singleOffer = {
 	icon: JSX.Element;
 	title: string;
 	description: string;
+	garage?: boolean;
 };
 
 const Offer = () => {
@@ -48,7 +49,8 @@ const Offer = () => {
 			icon: <FaWarehouse />,
 			title: 'garaże z płyty warstwowej',
 			description:
-				'Zajmujemy się kompleksowym projektowaniem, dobieraniem, montażem oraz testowaniem systemów klimatyzacji. Dodatkowo, oferujemy gwarancję na wszystkie nasze usługi.',
+				'Nasza firma zajmuję się również w kompleksowym projektowaniu, dostosowywaniu, montażu oraz testowaniu nowoczesnych garaży z płyt warstwowych. ',
+			garage: true,
 		},
 	];
 
@@ -63,6 +65,7 @@ const Offer = () => {
 						title={offer.title}
 						description={offer.description}
 						icon={offer.icon}
+						garage={offer.garage}
 					/>
 				))}
 			</div>
