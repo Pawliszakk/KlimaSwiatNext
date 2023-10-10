@@ -8,7 +8,7 @@ interface NavListProps {
 
 const NavList: React.FC<NavListProps> = ({ isOpen, onToggle }) => {
 	const navItems = [
-		{ name: 'O nas', href: '/#about-us' },
+		{ name: 'O nas', href: '/#about' },
 		{ name: 'Oferta', href: '/#offer' },
 		{ name: 'Realizacje', href: '/realizacje' },
 		{ name: 'Kontakt', href: '/#contact' },
