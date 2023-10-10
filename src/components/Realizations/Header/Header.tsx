@@ -8,10 +8,10 @@ const Header = () => {
 				<div className={classes.content}>
 					<h1>Realizacje</h1>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia non
-						illum minima ratione velit laboriosam ab nesciunt possimus
-						perferendis laborum? Laboriosam sunt quos amet, perspiciatis
-						voluptate natus accusantium consequatur recusandae.
+						Przedstawiamy naszą galerię montaży klimatyzacji. Jako Klima Śwait,
+						dbamy o estetyczne i profesjonalne instalacje, które idealnie
+						współgrają z aranżacją wnętrza. Przejdź niżej aby przyjrzeć się
+						naszym projektom bliżej.
 					</p>
 				</div>
 				<div className={classes.image}>
