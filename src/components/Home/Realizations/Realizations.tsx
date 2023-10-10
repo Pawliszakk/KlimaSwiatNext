@@ -1,6 +1,8 @@
 import SectionTitle from '@/components/UI/Section/SectionTitle';
 import classes from './Realizations.module.css';
-
+import SpecialButton from '@/components/UI/Buttons/SpecialButton';
+import Link from 'next/link';
+import SlideFromTop from '@/components/UI/Animations/SlideFromTop';
 const Realizations = () => {
 	const images = [
 		'/assets/montages/montaz1.jpg',
@@ -11,17 +13,28 @@ const Realizations = () => {
 	return (
 		<section className={classes.realizations}>
 			<SectionTitle blue>Realizacje</SectionTitle>
-			<div className={classes.box}>
+			<div className={classes.container}>
 				{images.map((image, i) => (
-					<div className={classes.image} key={i}>
-						<img
-							src={image}
-							alt="Zdjęcie wykonanego montażu systemu klimatyzacji"
-						/>
-						<div className={classes.more}></div>
-					</div>
+					<SlideFromTop index={i} key={i}>
+						<div>
+							<Link href="/realizacje" className={classes.box}>
+								<img
+									src={image}
+									alt="Zdjęcie wykonanego montażu systemu klimatyzacji"
+								/>
+								<div className={classes.reversal}>
+									<SpecialButton href="/realizacje">
+										Sprawdź więcej
+									</SpecialButton>
+								</div>
+							</Link>
+						</div>
+					</SlideFromTop>
 				))}
 			</div>
+			<SpecialButton className={classes.btn} href="/realizacje">
+				Sprawdź Galerię Realizacji
+			</SpecialButton>
 		</section>
 	);
 };
