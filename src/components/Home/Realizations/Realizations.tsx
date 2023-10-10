@@ -3,6 +3,7 @@ import classes from './Realizations.module.css';
 import SpecialButton from '@/components/UI/Buttons/SpecialButton';
 import Link from 'next/link';
 import SlideFromTop from '@/components/UI/Animations/SlideFromTop';
+import Divider from '@/components/UI/Section/Divider';
 const Realizations = () => {
 	const images = [
 		'/assets/montages/montaz1.jpg',
@@ -35,6 +36,8 @@ const Realizations = () => {
 			<SpecialButton className={classes.btn} href="/realizacje">
 				Sprawdź Galerię Realizacji
 			</SpecialButton>
+
+			<Divider blue />
 		</section>
 	);
 };

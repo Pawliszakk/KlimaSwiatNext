@@ -1,19 +1,26 @@
-.offer {
-	position: relative;
-	background-color: var(--main-color-lighter);
-	text-align: center;
-	padding: 6em 0;
-}
-.box {
-	margin: 4rem auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 10rem;
-	max-width: 1200px;
+.divider {
+	z-index: 5;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
 }
 
+.divider svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 66px;
+}
+
+.shapeFill {
+	fill: var(--white);
+}
+.blue {
+	fill: var(--main-color);
+}
 /** For tablet devices **/
 @media (min-width: 768px) and (max-width: 1023px) {
 	.divider svg {

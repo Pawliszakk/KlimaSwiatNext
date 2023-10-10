@@ -48,6 +48,7 @@
 	opacity: 1;
 }
 
+
 @media (min-width: 992px) {
 	.container {
 		gap: 5rem;
@@ -67,7 +68,7 @@
 	.reversal {
 		height: 300px;
 	}
-	.btn{
+	.btn {
 		margin-top: 6rem;
 	}
 }
