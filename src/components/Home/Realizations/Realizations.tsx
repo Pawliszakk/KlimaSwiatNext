@@ -17,8 +17,8 @@ const Realizations = () => {
 			<div className={classes.container}>
 				{images.map((image, i) => (
 					<SlideFromTop index={i} key={i}>
-						<div>
-							<Link href="/realizacje" className={classes.box}>
+						<Link href="/realizacje" className={classes.box}>
+							<div>
 								<img
 									src={image}
 									alt="Zdjęcie wykonanego montażu systemu klimatyzacji"
@@ -28,8 +28,8 @@ const Realizations = () => {
 										Sprawdź więcej
 									</SpecialButton>
 								</div>
-							</Link>
-						</div>
+							</div>
+						</Link>
 					</SlideFromTop>
 				))}
 			</div>

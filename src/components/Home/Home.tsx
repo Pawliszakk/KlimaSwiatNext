@@ -1,4 +1,5 @@
 import About from './About/About';
+import Contact from './Contact/Contact';
 import Decoration from './Decoration/Decoration';
 import Hero from './Hero/Hero';
 import Map from './Map/Map';
@@ -14,6 +15,7 @@ const Home = () => {
 			<Offer />
 			<Realizations />
 			<Map />
+			<Contact />
 		</>
 	);
 };

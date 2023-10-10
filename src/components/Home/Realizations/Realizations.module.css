@@ -48,8 +48,13 @@
 	opacity: 1;
 }
 
-
 @media (min-width: 992px) {
+	.btn {
+		margin-top: 5rem;
+	}
+	.realizations {
+		padding-bottom: 10rem;
+	}
 	.container {
 		gap: 5rem;
 	}
@@ -58,7 +63,9 @@
 	.container {
 		gap: 10rem;
 	}
-
+	.realizations {
+		padding-bottom: 15rem;
+	}
 	.box {
 		width: 300px;
 	}

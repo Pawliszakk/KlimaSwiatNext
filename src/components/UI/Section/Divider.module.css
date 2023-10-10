@@ -21,6 +21,9 @@
 .blue {
 	fill: var(--main-color);
 }
+.darkBlue {
+	fill: var(--main-color-darkest);
+}
 /** For tablet devices **/
 @media (min-width: 768px) and (max-width: 1023px) {
 	.divider svg {

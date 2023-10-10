@@ -25,9 +25,11 @@ const Map = () => {
 						referrerPolicy="no-referrer-when-downgrade"
 					></iframe>
 				</div>
-				<SpecialButton href="/#contact">Umów się na wycenę</SpecialButton>
+				<SpecialButton className={classes.btn} href="/#contact">
+					Umów się na wycenę
+				</SpecialButton>
 			</div>
-			<Divider/>
+			<Divider />
 		</section>
 	);
 };
