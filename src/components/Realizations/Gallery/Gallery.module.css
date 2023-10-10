@@ -1,0 +1,7 @@
+.gallery {
+	background-color: var(--main-color);
+	position: relative;
+	text-align: center;
+	min-height: 100vh;
+	padding: 5rem 0;
+}

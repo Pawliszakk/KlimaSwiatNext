@@ -1,7 +1,14 @@
+import Gallery from './Gallery/Gallery';
+import Header from './Header/Header';
 import classes from './Realizations.module.css';
 
 const Realizations = () => {
-	return <h1>Realizacje</h1>;
+	return (
+		<>
+			<Header />
+			<Gallery />
+		</>
+	);
 };
 
 export default Realizations;

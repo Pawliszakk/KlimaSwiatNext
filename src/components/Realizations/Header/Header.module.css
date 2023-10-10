@@ -1,0 +1,32 @@
+.header {
+	position: relative;
+	margin-top: 7vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5rem 0;
+}
+
+.content {
+	text-align: center;
+}
+
+.content h1 {
+	position: relative;
+	color: var(--main-color-darker);
+}
+.content h1::before {
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	background-color: var(--main-color-darker);
+	width: 30px;
+	content: '';
+}
+.image {
+	width: 300px;
+	margin: 0 auto;
+}
+.image img {
+	width: 100%;
+}
