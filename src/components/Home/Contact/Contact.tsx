@@ -3,10 +3,15 @@ import classes from './Contact.module.css';
 import Divider from '@/components/UI/Section/Divider';
 import { BsTelephone } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa6';
-import { GiChainMail } from 'react-icons/gi';
+import { IoMailOutline } from 'react-icons/io5';
 import ContactOption from './ContactOption';
 
-type ContactSingleOption = { icon: JSX.Element; title: string; text: string };
+type ContactSingleOption = {
+	icon: JSX.Element;
+	title: string;
+	text: string;
+	link?: boolean;
+};
 
 const Contact = () => {
 	const contactData: ContactSingleOption[] = [
@@ -19,9 +24,10 @@ const Contact = () => {
 			icon: <FaFacebookF />,
 			title: 'Sprawdź Facebooka!',
 			text: 'Klima Świat Facebook',
+			link: true,
 		},
 		{
-			icon: <GiChainMail />,
+			icon: <IoMailOutline />,
 			title: 'Wyslij do nas wiadomość!',
 			text: 'pachlakamil9@gmail.com',
 		},
@@ -31,20 +37,23 @@ const Contact = () => {
 		<section id="contact" className={classes.contact}>
 			<SectionTitle blue>Kontakt</SectionTitle>
 			<div className={classes.box}>
-				{contactData.map((option, i) => (
-					<ContactOption
-						key={i}
-						icon={option.icon}
-						title={option.title}
-						text={option.text}
+				<div className={classes.options}>
+					{contactData.map((option, i) => (
+						<ContactOption
+							key={i}
+							icon={option.icon}
+							title={option.title}
+							text={option.text}
+							link={option.link}
+						/>
+					))}
+				</div>
+				<div className={classes.ilustration}>
+					<img
+						src="/assets/ilustrations/contact.JPG"
+						alt="Biało Niebieska Ilustracja dwójki ludzi którzy rozmawiają i piją napój z kubka"
 					/>
-				))}
-			</div>
-			<div className={classes.ilustration}>
-				<img
-					src="/assets/ilustrations/contact.JPG"
-					alt="Biało Niebieska Ilustracja dwójki ludzi którzy rozmawiają i piją napój z kubka"
-				/>
+				</div>
 			</div>
 			<Divider darkBlue />
 		</section>

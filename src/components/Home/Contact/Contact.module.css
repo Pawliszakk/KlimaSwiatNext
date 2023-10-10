@@ -1,5 +1,35 @@
 .contact {
 	position: relative;
 	text-align: center;
-	height: 100vh;
+	padding: 5rem 0;
+	padding-bottom: 10rem;
+}
+.ilustration {
+	width: 350px;
+	margin: 5rem auto;
+}
+.ilustration img {
+	width: 100%;
+}
+@media (min-width: 768px) {
+	.ilustration {
+		width: 400px;
+	}
+}
+@media (min-width: 992px) {
+	.box {
+		margin: 0 auto;
+		max-width: 1200px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.options {
+		margin-left: 2rem;
+	}
+}
+@media (min-width: 1200px) {
+	.ilustration {
+		width: 450px;
+	}
 }

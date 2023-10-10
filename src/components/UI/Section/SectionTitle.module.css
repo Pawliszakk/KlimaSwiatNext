@@ -31,3 +31,8 @@
 		font-size: 3rem;
 	}
 }
+@media (min-width: 1400px) {
+	.title {
+		font-size: 3.5rem;
+	}
+}
