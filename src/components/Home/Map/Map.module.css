@@ -1,0 +1,14 @@
+.mapSection {
+	position: relative;
+	background-color: var(--main-color);
+	padding: 5rem 0;
+	text-align: center;
+	color: var(--white);
+}
+
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
