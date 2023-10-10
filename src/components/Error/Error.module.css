@@ -1,11 +1,11 @@
 .error {
-	margin-top: 7vh;
+	position: relative;
 	background-color: var(--white);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	height: 80vh;
+	height: 90vh;
 	gap: 5rem;
 }
 .text {

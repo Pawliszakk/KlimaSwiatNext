@@ -1,4 +1,5 @@
 import SpecialButton from '../UI/Buttons/SpecialButton';
+import Divider from '../UI/Section/Divider';
 import classes from './Error.module.css';
 
 const Error = () => {
@@ -17,6 +18,7 @@ const Error = () => {
 					Przejdź do strony głównej
 				</SpecialButton>
 			</div>
+			<Divider darkBlue />
 		</section>
 	);
 };
