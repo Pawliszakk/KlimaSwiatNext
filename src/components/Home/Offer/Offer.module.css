@@ -1,6 +1,6 @@
 .offer {
 	position: relative;
-	background-color: var(--main-color-lighter);
+	background-color: var(--main-color);
 	text-align: center;
 	padding: 6em 0;
 }
