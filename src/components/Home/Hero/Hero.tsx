@@ -52,6 +52,7 @@ const Hero = () => {
 		<header
 			className={classes.header}
 			style={{ backgroundImage: backgrounds[image] }}
+			id="home"
 		>
 			<div className={classes.box}>
 				<SlideAnimation>

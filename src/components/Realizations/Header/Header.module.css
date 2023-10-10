@@ -5,6 +5,7 @@
 	justify-content: center;
 	align-items: center;
 	padding: 5rem 0;
+	padding-bottom: 8rem;
 }
 
 .content {
@@ -14,6 +15,7 @@
 .content h1 {
 	position: relative;
 	color: var(--main-color-darker);
+	font-size: 3rem;
 }
 .content h1::before {
 	position: absolute;
@@ -23,6 +25,12 @@
 	width: 30px;
 	content: '';
 }
+.content p {
+	margin: 1em 0;
+	padding: 1em;
+	max-width: 300px;
+	font-size: 1.4rem;
+}
 .image {
 	width: 300px;
 	margin: 0 auto;
@@ -30,3 +38,47 @@
 .image img {
 	width: 100%;
 }
+
+@media (min-width: 576px) {
+	.content p {
+		max-width: 400px;
+		font-size: 1.6rem;
+	}
+}
+@media (min-width: 768px) {
+	.box {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+        gap: 2rem;
+	}
+	.content p {
+		margin: 0.5rem 0;
+	}
+}
+@media (min-width: 992px) {
+    .box{
+        gap: 8rem;
+        
+    }
+	.image {
+		width: 400px;
+	}
+	.content h1 {
+		font-size: 4rem;
+	}
+	.content p {
+		font-size: 2rem;
+		max-width: 450px;
+	}
+}
+
+@media (min-width: 1200px) {
+    .box{
+        gap: 15rem;
+        
+    }
+
+}
+
