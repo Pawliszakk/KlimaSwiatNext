@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
 				<title>Klimatyzacja Zamość | Montaż | Serwis | Pompy Ciepła</title>
 				<meta
 					name="description"
-					content="Potrzebujesz klimatyzacji? Klima Świat to firma zajmująca się montażem, serwisem oraz doborem klimatyzacji - szybko i skutecznie. Zadzwoń już dziś!"
+					content="Potrzebujesz klimatyzacji? Jesteś z Zamościa? Klima Świat to firma zajmująca się montażem, serwisem oraz doborem klimatyzacji - szybko i skutecznie. Zadzwoń już dziś!"
 				></meta>
 			</Head>
 			<Layout>
