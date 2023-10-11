@@ -32,6 +32,7 @@
 .box span {
 	position: absolute;
 	opacity: 0;
+	font-size: 1px;
 }
 
 @media (min-width: 576px) {
