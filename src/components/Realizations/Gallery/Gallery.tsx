@@ -1,9 +1,10 @@
 import SectionTitle from '@/components/UI/Section/SectionTitle';
 import classes from './Gallery.module.css';
 import Divider from '@/components/UI/Section/Divider';
-import Photo from './Photo';
-import { useState } from 'react';
+import Photo from './Photo/Photo';
+import { useState, useEffect } from 'react';
 import Backdrop from '@/components/UI/Backdrop/Backdrop';
+import BackdropPhoto from './Gallery/BackdropPhoto';
 
 const Gallery = () => {
 	const [isGallery, setIsGallery] = useState(false);
@@ -22,6 +23,13 @@ const Gallery = () => {
 	};
 	const closeGalleryHandler = () => setIsGallery(false);
 
+	const previousImageHandler = () => {
+		console.log('test222');
+	};
+	const nextImageHandler = () => {
+		console.log('test2');
+	};
+
 	return (
 		<section className={classes.gallery}>
 			<SectionTitle>Sprawdź naszą pracę!</SectionTitle>
@@ -33,9 +41,10 @@ const Gallery = () => {
 			</div>
 			{isGallery && (
 				<Backdrop onClose={closeGalleryHandler} isVisible={isGallery}>
-					<img
+					<BackdropPhoto
+						onNext={nextImageHandler}
+						onPrevious={previousImageHandler}
 						src={`/assets/montages/montage${currentPhoto}.jpg`}
-						alt="Montaż Wykonany przez firmę klima świat"
 					/>
 				</Backdrop>
 			)}
