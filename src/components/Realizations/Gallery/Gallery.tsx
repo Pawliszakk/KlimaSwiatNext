@@ -24,10 +24,22 @@ const Gallery = () => {
 	const closeGalleryHandler = () => setIsGallery(false);
 
 	const previousImageHandler = () => {
-		console.log('test222');
+		let photo = currentPhoto;
+		if (currentPhoto === 0) {
+			setCurrentPhoto(photosAmount);
+			return;
+		}
+		photo!--;
+		setCurrentPhoto(photo);
 	};
 	const nextImageHandler = () => {
-		console.log('test2');
+		let photo = currentPhoto;
+		if (currentPhoto === photosAmount) {
+			setCurrentPhoto(0);
+			return;
+		}
+		photo!++;
+		setCurrentPhoto(photo);
 	};
 
 	return (
@@ -40,13 +52,18 @@ const Gallery = () => {
 				))}
 			</div>
 			{isGallery && (
-				<Backdrop onClose={closeGalleryHandler} isVisible={isGallery}>
+				<>
+					{' '}
+					<Backdrop
+						onClose={closeGalleryHandler}
+						isVisible={isGallery}
+					></Backdrop>
 					<BackdropPhoto
 						onNext={nextImageHandler}
 						onPrevious={previousImageHandler}
 						src={`/assets/montages/montage${currentPhoto}.jpg`}
 					/>
-				</Backdrop>
+				</>
 			)}
 			<Divider darkBlue />
 		</section>

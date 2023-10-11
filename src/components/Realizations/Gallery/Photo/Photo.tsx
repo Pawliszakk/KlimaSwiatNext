@@ -1,6 +1,4 @@
-import SlideFromTop from '@/components/UI/Animations/SlideFromTop';
 import classes from './Photo.module.css';
-
 interface PhotoProps {
 	src: string;
 	index: number;

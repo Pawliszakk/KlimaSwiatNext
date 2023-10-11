@@ -1,3 +1,11 @@
+.box {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 4000;
+}
+
 .buttons {
 	display: flex;
 	justify-content: space-between;
@@ -6,9 +14,11 @@
 }
 .buttons button {
 	cursor: pointer;
-	font-size: 4rem;
+	font-size: 5rem;
 	background-color: transparent;
 	z-index: 2;
+	color: var(--white);
+	border: none;
 }
 
 .image {
