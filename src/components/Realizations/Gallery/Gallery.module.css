@@ -5,3 +5,12 @@
 	min-height: 100vh;
 	padding: 5rem 0;
 }
+.box {
+	margin: 5rem auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 5rem;
+	max-width: 1200px;
+}

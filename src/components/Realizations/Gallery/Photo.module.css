@@ -1,0 +1,33 @@
+.box {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.reversal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+.box:hover img {
+	filter: blur(2px);
+}
+.box:hover .reversal {
+	opacity: 1;
+}
