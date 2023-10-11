@@ -53,6 +53,7 @@ const Contact = () => {
 					<img
 						src="/assets/ilustrations/contact.JPG"
 						alt="Biało Niebieska Ilustracja dwójki ludzi którzy rozmawiają i piją napój z kubka"
+						loading="lazy"
 					/>
 				</SlideAnimation>
 			</div>

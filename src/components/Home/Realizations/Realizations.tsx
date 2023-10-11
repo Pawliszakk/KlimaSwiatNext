@@ -30,6 +30,7 @@ const Realizations = () => {
 									<img
 										src={image}
 										alt="Zdjęcie wykonanego montażu systemu klimatyzacji"
+										loading="lazy"
 									/>
 									<div className={classes.reversal}>
 										<SpecialButton href="/realizacje">

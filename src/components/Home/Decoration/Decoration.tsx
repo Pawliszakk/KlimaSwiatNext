@@ -18,6 +18,7 @@ const Decoration = () => {
 				<img
 					src="/assets/ilustrations/technican.JPG"
 					alt="Biało Niebieska Ilustracja technika klimatyzacji z kluczem na tle domu"
+					loading="lazy"
 				/>
 			</SlideAnimation>
 
