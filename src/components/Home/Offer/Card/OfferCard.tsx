@@ -23,7 +23,7 @@ const OfferCard: React.FC<OfferCardProps> = ({
 			<h2 className={` ${garage ? classes.garage : null}`}>{title}</h2>
 			<hr />
 			<p>{description}</p>
-			<SpecialButton href="/#offer">Skontaktuj się</SpecialButton>
+			<SpecialButton href="/#contact">Skontaktuj się</SpecialButton>
 		</SlideFromTop>
 	);
 };
