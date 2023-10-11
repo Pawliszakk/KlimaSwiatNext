@@ -10,12 +10,16 @@ interface BackdropPhotoProps {
 	src: string;
 	onNext: () => void;
 	onPrevious: () => void;
+	current: number | null;
+	amount: number;
 }
 
 const BackdropPhoto: React.FC<BackdropPhotoProps> = ({
 	src,
 	onNext,
 	onPrevious,
+	amount,
+	current,
 }) => {
 	return (
 		<Portal id="overlay-root">
@@ -38,6 +42,9 @@ const BackdropPhoto: React.FC<BackdropPhotoProps> = ({
 					>
 						<BsFillArrowLeftSquareFill />
 					</motion.button>
+					<p>
+						{current}/{amount}
+					</p>
 					<motion.button
 						whileTap={{ scale: 0.7 }}
 						whileHover={{

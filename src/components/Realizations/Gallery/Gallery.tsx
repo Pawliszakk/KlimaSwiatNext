@@ -1,10 +1,10 @@
 import SectionTitle from '@/components/UI/Section/SectionTitle';
 import classes from './Gallery.module.css';
 import Divider from '@/components/UI/Section/Divider';
-import Photo from './Photo/Photo';
+import Photo from './Photo';
 import { useState, useEffect } from 'react';
 import Backdrop from '@/components/UI/Backdrop/Backdrop';
-import BackdropPhoto from './Gallery/BackdropPhoto';
+import BackdropPhoto from './BackdropPhoto';
 
 const Gallery = () => {
 	const [isGallery, setIsGallery] = useState(false);
@@ -53,7 +53,6 @@ const Gallery = () => {
 			</div>
 			{isGallery && (
 				<>
-					{' '}
 					<Backdrop
 						onClose={closeGalleryHandler}
 						isVisible={isGallery}
@@ -62,6 +61,8 @@ const Gallery = () => {
 						onNext={nextImageHandler}
 						onPrevious={previousImageHandler}
 						src={`/assets/montages/montage${currentPhoto}.jpg`}
+						current={currentPhoto}
+						amount={photosAmount}
 					/>
 				</>
 			)}

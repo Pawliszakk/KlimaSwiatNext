@@ -8,7 +8,7 @@ const Header = () => {
 				<div className={classes.content}>
 					<h1>Realizacje</h1>
 					<p>
-						Przedstawiamy naszą galerię montaży klimatyzacji. Jako Klima Śwait,
+						Przedstawiamy naszą galerię montaży klimatyzacji. Jako Klima Świat,
 						dbamy o estetyczne i profesjonalne instalacje, które idealnie
 						współgrają z aranżacją wnętrza. Przejdź niżej aby przyjrzeć się
 						naszym projektom bliżej.
