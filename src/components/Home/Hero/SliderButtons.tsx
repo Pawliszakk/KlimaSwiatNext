@@ -20,6 +20,7 @@ const SliderButtons: React.FC<SliderButtonsProps> = ({
 					onClick={() => onSlideChange(i)}
 					className={`${i === index ? classes.active : null}`}
 				>
+					<span>{`Slajd Numer ${btn}`}</span>
 				</button>
 			))}
 		</SlideFromBottom>

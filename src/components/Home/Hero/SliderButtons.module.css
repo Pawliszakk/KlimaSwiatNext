@@ -20,7 +20,10 @@
 	border: 2px solid var(--white);
 	cursor: pointer;
 }
-
+.box button span {
+	position: absolute;
+	opacity: 0;
+}
 .box button.active {
 	background-color: var(--main-color-darker);
 }

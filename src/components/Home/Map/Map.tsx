@@ -24,6 +24,7 @@ const Map = () => {
 						style={{ border: 0 }}
 						loading="lazy"
 						referrerPolicy="no-referrer-when-downgrade"
+						title="Obszar działalności Firmy Klima Świat"
 					></iframe>
 				</SlideAnimation>
 				<SpecialButton className={classes.btn} href="/#contact">

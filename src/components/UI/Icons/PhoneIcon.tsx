@@ -30,6 +30,7 @@ const ScrollToTop = () => {
 					>
 						<Link href="/#contact">
 							<FaPhone />
+							<span>Kontakt</span>
 						</Link>
 					</motion.div>
 				</Portal>
