@@ -7,7 +7,13 @@ import Portal from '@/lib/portal';
 import { FaPhone } from 'react-icons/fa';
 import Link from 'next/link';
 
-const ScrollToTop = () => {
+const ScrollContact = () => {
+	const [isClient, setIsClient] = useState(false);
+
+	useEffect(() => {
+		setIsClient(true);
+	}, []);
+
 	const [isScrolled, setIsScrolled] = useState(false);
 	const handleScroll = () => {
 		window.scrollY >= 650 ? setIsScrolled(true) : setIsScrolled(false);
@@ -28,10 +34,12 @@ const ScrollToTop = () => {
 						exit={{ opacity: 0 }}
 						whileTap={{ scale: 0.5 }}
 					>
-						<Link href="/#contact">
-							<FaPhone />
-							<span>Kontakt</span>
-						</Link>
+						{isClient && (
+							<Link href="/#contact">
+								<FaPhone />
+								<span>Kontakt</span>
+							</Link>
+						)}
 					</motion.div>
 				</Portal>
 			)}
@@ -39,4 +47,4 @@ const ScrollToTop = () => {
 	);
 };
 
-export default ScrollToTop;
+export default ScrollContact;
