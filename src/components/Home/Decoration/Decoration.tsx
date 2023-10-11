@@ -10,7 +10,7 @@ const Decoration = () => {
 				<SectionTitle blue>Dlaczego my?</SectionTitle>
 				<p>
 					Działamy na rynku od lat, dostarczając klientom niezmiennie najwyższą
-					jakośc i budując trwałe relacje, oparte na pełnym zaufaniu, co jest
+					jakość i budując trwałe relacje, oparte na pełnym zaufaniu, co jest
 					dla nas priorytetem
 				</p>
 			</SlideAnimation>
