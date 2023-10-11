@@ -4,7 +4,14 @@ import SpecialButton from '@/components/UI/Buttons/SpecialButton';
 import Link from 'next/link';
 import SlideFromTop from '@/components/UI/Animations/SlideFromTop';
 import Divider from '@/components/UI/Section/Divider';
+import { useEffect, useState } from 'react';
 const Realizations = () => {
+	const [isClient, setIsClient] = useState(false);
+
+	useEffect(() => {
+		setIsClient(true);
+	}, []);
+
 	const images = [
 		'/assets/montages/montaz1.jpg',
 		'/assets/montages/montaz2.jpg',
@@ -17,19 +24,21 @@ const Realizations = () => {
 			<div className={classes.container}>
 				{images.map((image, i) => (
 					<SlideFromTop index={i} key={i}>
-						<Link href="/realizacje" className={classes.box}>
-							<div>
-								<img
-									src={image}
-									alt="Zdjęcie wykonanego montażu systemu klimatyzacji"
-								/>
-								<div className={classes.reversal}>
-									<SpecialButton href="/realizacje">
-										Sprawdź więcej
-									</SpecialButton>
+						{isClient && (
+							<Link href="/realizacje" className={classes.box}>
+								<div>
+									<img
+										src={image}
+										alt="Zdjęcie wykonanego montażu systemu klimatyzacji"
+									/>
+									<div className={classes.reversal}>
+										<SpecialButton href="/realizacje">
+											Sprawdź więcej
+										</SpecialButton>
+									</div>
 								</div>
-							</div>
-						</Link>
+							</Link>
+						)}
 					</SlideFromTop>
 				))}
 			</div>
