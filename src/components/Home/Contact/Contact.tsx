@@ -5,6 +5,7 @@ import { BsTelephone } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa6';
 import { IoMailOutline } from 'react-icons/io5';
 import ContactOption from './ContactOption';
+import SlideAnimation from '@/components/UI/Animations/SlideAnimation';
 
 type ContactSingleOption = {
 	icon: JSX.Element;
@@ -37,7 +38,7 @@ const Contact = () => {
 		<section id="contact" className={classes.contact}>
 			<SectionTitle blue>Kontakt</SectionTitle>
 			<div className={classes.box}>
-				<div className={classes.options}>
+				<SlideAnimation className={classes.options}>
 					{contactData.map((option, i) => (
 						<ContactOption
 							key={i}
@@ -47,13 +48,13 @@ const Contact = () => {
 							link={option.link}
 						/>
 					))}
-				</div>
-				<div className={classes.ilustration}>
+				</SlideAnimation>
+				<SlideAnimation left className={classes.ilustration}>
 					<img
 						src="/assets/ilustrations/contact.JPG"
 						alt="Biało Niebieska Ilustracja dwójki ludzi którzy rozmawiają i piją napój z kubka"
 					/>
-				</div>
+				</SlideAnimation>
 			</div>
 			<Divider darkBlue />
 		</section>
