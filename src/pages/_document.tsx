@@ -23,6 +23,13 @@ export default function Document() {
 					href="/favicon-16x16.png"
 				/>
 				<link rel="manifest" href="/favicon/site.webmanifest" />
+				<title>Klimatyzacja Zamość | Montaż | Serwis | Pompy Ciepła</title>
+				<meta
+					name="description"
+					content="Potrzebujesz klimatyzacji? Jesteś z Zamościa?
+					 Klima Świat to firma zajmująca się montażem, serwisem oraz doborem klimatyzacji - szybko i skutecznie. Zadzwoń już dziś!"
+				></meta>
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
 			</Head>
 			<body>
 				<div id="overlay-root"></div>
