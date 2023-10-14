@@ -43,7 +43,7 @@ const BackdropPhoto: React.FC<BackdropPhotoProps> = ({
 						<BsFillArrowLeftSquareFill />
 					</motion.button>
 					<p>
-						{current}/{amount}
+						{current! + 1}/{amount + 1}
 					</p>
 					<motion.button
 						whileTap={{ scale: 0.7 }}
