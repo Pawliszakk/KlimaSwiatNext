@@ -26,10 +26,10 @@ const Gallery = () => {
 
 	const previousImageHandler = () => {
 		setCurrentPhoto((prevPhoto) => {
-			if (prevPhoto === null) {
+			if (prevPhoto === null || prevPhoto === 0) {
 				return photosAmount;
 			} else {
-				return (prevPhoto - 1 + photosAmount) % (photosAmount + 1);
+				return prevPhoto - 1;
 			}
 		});
 	};
