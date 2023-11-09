@@ -1,10 +1,12 @@
+import { useEffect } from 'react';
+import { motion } from 'framer-motion';
+import Portal from '@/lib/portal';
+
 import {
 	BsFillArrowLeftSquareFill,
 	BsFillArrowRightSquareFill,
 } from 'react-icons/bs';
 import classes from './BackdropPhoto.module.css';
-import { motion } from 'framer-motion';
-import Portal from '@/lib/portal';
 
 interface BackdropPhotoProps {
 	src: string;

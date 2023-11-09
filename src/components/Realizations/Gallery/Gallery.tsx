@@ -1,8 +1,9 @@
+import { useState, useEffect } from 'react';
+
 import SectionTitle from '@/components/UI/Section/SectionTitle';
 import classes from './Gallery.module.css';
 import Divider from '@/components/UI/Section/Divider';
 import Photo from './Photo';
-import { useState, useEffect } from 'react';
 import Backdrop from '@/components/UI/Backdrop/Backdrop';
 import BackdropPhoto from './BackdropPhoto';
 
@@ -24,23 +25,42 @@ const Gallery = () => {
 	const closeGalleryHandler = () => setIsGallery(false);
 
 	const previousImageHandler = () => {
-		let photo = currentPhoto;
-		if (currentPhoto === 0) {
-			setCurrentPhoto(photosAmount);
-			return;
-		}
-		photo!--;
-		setCurrentPhoto(photo);
+		setCurrentPhoto((prevPhoto) => {
+			if (prevPhoto === null) {
+				return photosAmount;
+			} else {
+				return (prevPhoto - 1 + photosAmount) % (photosAmount + 1);
+			}
+		});
 	};
+
 	const nextImageHandler = () => {
-		let photo = currentPhoto;
-		if (currentPhoto === photosAmount) {
-			setCurrentPhoto(0);
-			return;
-		}
-		photo!++;
-		setCurrentPhoto(photo);
+		setCurrentPhoto((prevPhoto) => {
+			if (prevPhoto === null) {
+				return 0;
+			} else {
+				return (prevPhoto + 1) % (photosAmount + 1);
+			}
+		});
 	};
+
+	const keyboardClickHandler = (e: KeyboardEvent) => {
+		if (e.key === 'Escape') {
+			setIsGallery(false);
+		}
+		if (e.key === 'ArrowLeft') {
+			previousImageHandler();
+		} else if (e.key === 'ArrowRight') {
+			nextImageHandler();
+		}
+	};
+
+	useEffect(() => {
+		window.addEventListener('keydown', keyboardClickHandler);
+		return () => {
+			window.removeEventListener('keydown', keyboardClickHandler);
+		};
+	}, []);
 
 	return (
 		<section className={classes.gallery}>
