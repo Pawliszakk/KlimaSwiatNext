@@ -1,5 +1,5 @@
-import SlideFromBottom from '@/components/UI/Animations/SlideFromBottom';
 import classes from './SliderButtons.module.css';
+import SlideFromBottom from '@/components/UI/Animations/SlideFromBottom';
 
 interface SliderButtonsProps {
 	index: number;

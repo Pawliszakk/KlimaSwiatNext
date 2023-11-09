@@ -1,10 +1,11 @@
+import { useEffect, useState } from 'react';
 import SectionTitle from '@/components/UI/Section/SectionTitle';
 import classes from './Realizations.module.css';
 import SpecialButton from '@/components/UI/Buttons/SpecialButton';
 import Link from 'next/link';
 import SlideFromTop from '@/components/UI/Animations/SlideFromTop';
 import Divider from '@/components/UI/Section/Divider';
-import { useEffect, useState } from 'react';
+
 const Realizations = () => {
 	const [isClient, setIsClient] = useState(false);
 

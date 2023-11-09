@@ -1,5 +1,6 @@
-import SectionTitle from '@/components/UI/Section/SectionTitle';
 import classes from './Contact.module.css';
+
+import SectionTitle from '@/components/UI/Section/SectionTitle';
 import Divider from '@/components/UI/Section/Divider';
 import { BsTelephone } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa6';

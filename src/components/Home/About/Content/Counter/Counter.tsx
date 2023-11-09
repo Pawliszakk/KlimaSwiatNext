@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
-import classes from './Counter.module.css';
+
 import CountUp from 'react-countup';
+import classes from './Counter.module.css';
 import { BsFillCalendarCheckFill, BsTools } from 'react-icons/bs';
 import { PiHandshakeBold } from 'react-icons/pi';
 import CounterItem from './CounterItem';

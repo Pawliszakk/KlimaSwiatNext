@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import classes from './Hero.module.css';
 import { FaSnowflake } from 'react-icons/fa';
 import Content from './Content';
