@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import classes from './Nav.module.css';
 import NavList from './NavItems/NavList';
 import NavLogo from './NavItems/NavLogo';
@@ -9,10 +9,12 @@ const Nav = () => {
 
 	const navToggleHandler = () => setOpen((prev) => !prev);
 
-	isOpen
-		? (document.body.style.overflow = 'hidden')
-		: (document.body.style.overflow = 'auto');
-		
+	useEffect(() => {
+		isOpen
+			? (document.body.style.overflow = 'hidden')
+			: (document.body.style.overflow = 'auto');
+	}, [isOpen, navToggleHandler]);
+
 	return (
 		<header className={classes.header}>
 			<nav>
