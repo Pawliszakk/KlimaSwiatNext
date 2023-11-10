@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import classes from './Nav.module.css';
 import NavList from './NavItems/NavList';
 import NavLogo from './NavItems/NavLogo';
@@ -10,9 +11,21 @@ const Nav = () => {
 	const navToggleHandler = () => setOpen((prev) => !prev);
 
 	useEffect(() => {
-		isOpen
-			? (document.body.style.overflow = 'hidden')
-			: (document.body.style.overflow = 'auto');
+		const handleResize = () => {
+			if (window.innerWidth < 768) {
+				document.body.style.overflow = isOpen ? 'hidden' : 'auto';
+			} else {
+				document.body.style.overflow = 'auto';
+			}
+		};
+
+		window.addEventListener('resize', handleResize);
+
+		handleResize();
+
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
 	}, [isOpen, navToggleHandler]);
 
 	return (
