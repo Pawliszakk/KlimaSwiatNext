@@ -9,6 +9,10 @@ const Nav = () => {
 
 	const navToggleHandler = () => setOpen((prev) => !prev);
 
+	isOpen
+		? (document.body.style.overflow = 'hidden')
+		: (document.body.style.overflow = 'auto');
+		
 	return (
 		<header className={classes.header}>
 			<nav>
