@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
 				<meta
 					name="description"
 					content="Potrzebujesz klimatyzacji? Jesteś z Zamościa?
-					 Klima Świat to firma zajmująca się montażem, serwisem oraz doborem klimatyzacji - szybko i skutecznie. Zadzwoń już dziś!"
+					 Klima Świat zajmuje się montażem, serwisem oraz doborem klimatyzacji - szybko i skutecznie. Zadzwoń już dziś!"
 				></meta>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 			</Head>
