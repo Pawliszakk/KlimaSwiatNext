@@ -12,10 +12,10 @@ export function ThemeContextProvider({ children }) {
 	const changeThemeHandler = () => {
 		const body = document.querySelector('body');
 		if (isBlue) {
-			body.setAttribute('data-theme', 'gray');
+			body.setAttribute('data-theme', 'blue');
 			setIsBlue(false);
 		} else {
-			body.setAttribute('data-theme', 'blue');
+			body.setAttribute('data-theme', 'gray');
 			setIsBlue(true);
 		}
 	};

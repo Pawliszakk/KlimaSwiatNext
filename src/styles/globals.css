@@ -15,7 +15,14 @@
 	--second-theme-main-color: #008590;
 }
 [data-theme='blue'] {
-	--main-color: #4169e1;
+	--main-color: #008590;
+	--main-color-darker: #03626a;
+	--main-color-darkest: #01454b;
+	--main-color-lighter: #039fad;
+	--main-color-lightest: #03b5c5;
+	--purple: #061c60;
+	--white: #fff;
+	--second-theme-main-color: #4169e1;
 }
 
 html {

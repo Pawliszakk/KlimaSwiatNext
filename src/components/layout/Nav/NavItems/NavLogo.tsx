@@ -1,12 +1,20 @@
-import Link from 'next/link';
-import classes from './NavLogo.module.css';
+import { useContext } from 'react';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
+import ThemeContext from '@/context/theme-context';
+
+import classes from './NavLogo.module.css';
 
 const NavLogo = () => {
 	const router = useRouter();
 	const isHomePage = router.pathname === '/';
+
+	const { isBlue } = useContext(ThemeContext);
+
+	const imageSrc = isBlue ? 'logo-nav.JPG' : 'logo-nav-gray.JPG';
+
 	const image = (
-		<img src="/assets/logos/logo-nav.JPG" alt="Logo Firmy Klima Świat" />
+		<img src={`/assets/logos/${imageSrc}`} alt="Logo Firmy Klima Świat" />
 	);
 	return (
 		<div className={classes.logo}>
