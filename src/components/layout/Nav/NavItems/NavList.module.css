@@ -1,8 +1,5 @@
 .list ul {
 	list-style-type: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 .list ul li {
 	text-transform: uppercase;
@@ -48,6 +45,8 @@
 		height: 100%;
 		display: flex;
 		gap: 2em;
+		justify-content: center;
+		align-items: center;
 	}
 	.list ul li a {
 		font-size: 1.8rem;
