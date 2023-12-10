@@ -1,13 +1,19 @@
+import { useContext } from 'react';
 import SpecialButton from '../UI/Buttons/SpecialButton';
 import Divider from '../UI/Section/Divider';
 import classes from './Error.module.css';
+import ThemeContext from '@/context/theme-context';
 
 const Error = () => {
+	const { isBlue } = useContext(ThemeContext);
+
+	const imageSrc = isBlue ? '404.JPG' : '404-gray.JPG';
+
 	return (
 		<section className={classes.error}>
 			<div className={classes.image}>
 				<img
-					src="/assets/ilustrations/404.JPG"
+					src={`/assets/ilustrations/${imageSrc}`}
 					alt="Ilustracja Zakłopotanej kobiety na tle zepsutych sprzętów elektronicznych"
 				/>
 			</div>

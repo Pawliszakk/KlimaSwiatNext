@@ -1,7 +1,14 @@
+import { useContext } from 'react';
+import ThemeContext from '@/context/theme-context';
+
 import classes from './Header.module.css';
 import Divider from '@/components/UI/Section/Divider';
 
 const Header = () => {
+	const { isBlue } = useContext(ThemeContext);
+
+	const imageSrc = isBlue ? 'technican.JPG' : 'technican-gray.JPG';
+
 	return (
 		<header className={classes.header}>
 			<div className={classes.box}>
@@ -16,7 +23,7 @@ const Header = () => {
 				</div>
 				<div className={classes.image}>
 					<img
-						src="/assets/ilustrations/technican.JPG"
+						src={`/assets/ilustrations/${imageSrc}`}
 						alt="Biało Niebieska Ilustracja technika klimatyzacji z kluczem na tle domu"
 					/>
 				</div>

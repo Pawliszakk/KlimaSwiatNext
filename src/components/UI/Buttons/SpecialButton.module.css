@@ -1,13 +1,13 @@
 .button {
 	color: var(--white);
-	background-color: var(--main-color-darker);
+	background-color: var(--main-cta);
 	font-size: 1.8rem;
 	padding: 0.5em 1em;
 	transition: background-color 0.3s, border-color 0.3s;
 	border: 2px solid transparent;
 }
 .button:hover {
-	background-color: var(--main-color-darkest);
+	background-color: var(--main-cta-darker);
 	border-color: var(--white);
 }
 .empty {

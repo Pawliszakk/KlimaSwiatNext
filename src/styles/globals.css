@@ -13,6 +13,8 @@
 	--purple: #061c60;
 	--white: #fff;
 	--second-theme-main-color: #008590;
+	--main-cta: #1e47c2;
+	--main-cta-darker: #0d309a;
 }
 [data-theme='blue'] {
 	--main-color: #008590;

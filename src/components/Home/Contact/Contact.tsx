@@ -1,3 +1,5 @@
+import { useContext } from 'react';
+import ThemeContext from '@/context/theme-context';
 import classes from './Contact.module.css';
 
 import SectionTitle from '@/components/UI/Section/SectionTitle';
@@ -35,6 +37,10 @@ const Contact = () => {
 		},
 	];
 
+	const { isBlue } = useContext(ThemeContext);
+
+	const imageSrc = isBlue ? 'contact.JPG' : 'contact-gray.JPG';
+
 	return (
 		<section id="contact" className={classes.contact}>
 			<SectionTitle blue>Kontakt</SectionTitle>
@@ -52,7 +58,7 @@ const Contact = () => {
 				</SlideAnimation>
 				<SlideAnimation left className={classes.ilustration}>
 					<img
-						src="/assets/ilustrations/contact.JPG"
+						src={`/assets/ilustrations/${imageSrc}`}
 						alt="Biało Niebieska Ilustracja dwójki ludzi którzy rozmawiają i piją napój z kubka"
 						loading="lazy"
 					/>
