@@ -2,6 +2,7 @@ import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
 import Layout from '@/components/layout/Layout';
 import Head from 'next/head';
+import { ThemeContextProvider } from '@/context/theme-context';
 
 export default function App({ Component, pageProps }: AppProps) {
 	return (
@@ -15,9 +16,11 @@ export default function App({ Component, pageProps }: AppProps) {
 				></meta>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 			</Head>
-			<Layout>
-				<Component {...pageProps} />
-			</Layout>
+			<ThemeContextProvider>
+				<Layout>
+					<Component {...pageProps} />
+				</Layout>
+			</ThemeContextProvider>
 		</>
 	);
 }

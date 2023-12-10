@@ -12,7 +12,12 @@
 	--main-color-lightest: #7f9cf3;
 	--purple: #061c60;
 	--white: #fff;
+	--second-theme-main-color: #008590;
 }
+[data-theme='blue'] {
+	--main-color: #4169e1;
+}
+
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;

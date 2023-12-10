@@ -14,12 +14,26 @@
 	height: 100%;
 	max-width: 1400px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 
 .burger {
 	color: var(--white);
+}
+.themeIcon {
+	background-color: var(--second-theme-main-color);
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-right: 1em;
+	border: 2px solid #fff;
+}
+.icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 @media (min-width: 400px) {
 }
