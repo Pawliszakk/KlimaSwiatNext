@@ -25,3 +25,8 @@ jobs:
        run: npm run build
      - name: Export Webiste
        run: npm run export
+     - name: Upload artifacts
+       uses: actions/upload-artifact@v4
+       with: 
+        name: deploy-files
+        path: out
