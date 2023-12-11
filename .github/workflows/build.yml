@@ -1,32 +1,32 @@
 name: Build And Lint Website
-on: 
+on:
   push:
     branches:
-     - main
+      - main
 jobs:
-  lint: 
+  lint:
     runs-on: ubuntu-latest
     steps:
-     - name: Get Code
-       uses: actions/checkout@v3
-     - name: Install dependencies
-       run: npm ci
-     - name: Lint code
-       run: npm run lint
+      - name: Get Code
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm ci
+      - name: Lint code
+        run: npm run lint
   build:
     needs: lint
     runs-on: ubuntu-latest
-    steps: 
-     - name: Get Code
-       uses: actions/checkout@v3
-     - name: Install dependencies
-       run: npm ci
-     - name: Build Website
-       run: npm run build
-     - name: Export Webiste
-       run: npm run export
-     - name: Upload artifacts
-       uses: actions/upload-artifact@v3
-       with: 
-        name: deploy-files
-        path: out
+    steps:
+      - name: Get Code
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm ci
+      - name: Build Website
+        run: npm run build
+      - name: Export Webiste
+        run: npm run export
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: deploy-files
+          path: out
