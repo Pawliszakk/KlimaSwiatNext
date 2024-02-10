@@ -35,10 +35,10 @@ const ScrollContact = () => {
 						whileTap={{ scale: 0.5 }}
 					>
 						{isClient && (
-							<Link href="/#contact">
+							<a href="tel:515 463 226">
 								<FaPhone />
 								<span>Kontakt</span>
-							</Link>
+							</a>
 						)}
 					</motion.div>
 				</Portal>

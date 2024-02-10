@@ -4,14 +4,14 @@ interface ContactOptionProps {
 	icon: JSX.Element;
 	title: string;
 	text: string;
-	link?: boolean;
+	href?: string;
 }
 
 const ContactOption: React.FC<ContactOptionProps> = ({
 	icon,
 	text,
 	title,
-	link,
+	href,
 }) => {
 	return (
 		<div className={classes.box}>
@@ -19,12 +19,8 @@ const ContactOption: React.FC<ContactOptionProps> = ({
 			<div className={classes.text}>
 				<p>{title}</p>
 				<h3>
-					{link ? (
-						<a
-							href="https://www.facebook.com/profile.php?id=100082822172597"
-							rel="noopener"
-							target="_blank"
-						>
+					{href ? (
+						<a href={href!} rel="noopener" target="_blank">
 							{text}
 						</a>
 					) : (

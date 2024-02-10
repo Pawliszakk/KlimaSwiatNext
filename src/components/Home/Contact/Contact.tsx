@@ -14,7 +14,7 @@ type ContactSingleOption = {
 	icon: JSX.Element;
 	title: string;
 	text: string;
-	link?: boolean;
+	href?: string;
 };
 
 const Contact = () => {
@@ -23,17 +23,19 @@ const Contact = () => {
 			icon: <BsTelephone />,
 			title: 'Zadzwoń do nas!',
 			text: '515 463 226',
+			href: 'tel:515 463 226',
 		},
 		{
 			icon: <FaFacebookF />,
 			title: 'Sprawdź Facebooka!',
 			text: 'Klima Świat Facebook',
-			link: true,
+			href: 'https://www.facebook.com/profile.php?id=61554684317544',
 		},
 		{
 			icon: <IoMailOutline />,
 			title: 'Wyslij do nas wiadomość!',
-			text: 'pachlakamil9@gmail.com',
+			text: 'biuro@klimaswiat.pl',
+			href: 'mailto:biuro@klimaswiat.pl',
 		},
 	];
 
@@ -52,7 +54,7 @@ const Contact = () => {
 							icon={option.icon}
 							title={option.title}
 							text={option.text}
-							link={option.link}
+							href={option.href}
 						/>
 					))}
 				</SlideAnimation>
