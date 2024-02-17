@@ -30,12 +30,7 @@ const Offer = () => {
 			description:
 				'Aby zachować prawidłową pracę klimatyzacji, konieczne jest regularne serwisowanie. Zajmujemy się świadczeniem usług serwisowych, usuwaniem awarii oraz naprawami systemów klimatyzacji',
 		},
-		{
-			icon: <PiHandshakeFill />,
-			title: 'doradztwo',
-			description:
-				'Indywidualnie dobierzemy urządzenie które, będzie najlepsze do twoich potrzeb. Oferujemy darmową wycenę naszych usług oraz profesjonalne doradztwo, byś mógł podjąć najlepszą decyzję dla siebie..',
-		},
+
 		{
 			icon: <LuThermometerSnowflake />,
 			title: 'chłodnictwo',
@@ -53,19 +48,27 @@ const Offer = () => {
 			title: 'Instalacje elektryczne',
 			description:
 				'Zajmujemy się również kompleksowo instalacjami elektrycznymi. Nasza oferta obejmuje pełen zakres usług, począwszy od projektu, aż po finalne wykonanie instalacji.',
+			garage: true,
 		},
+
 		{
 			icon: <GiSolarPower />,
 			title: 'Fotowoltaika',
 			description:
 				'Nasza ekipa zajmuje się również kompleksowymi instalacjami fotowoltaicznymi, oferując pełen zakres usług od projektu do finalnego wykonania. ',
 		},
-
+		{
+			icon: <PiHandshakeFill />,
+			title: 'doradztwo',
+			description:
+				'Indywidualnie dobierzemy urządzenie które, będzie najlepsze do twoich potrzeb. Oferujemy darmową wycenę naszych usług oraz profesjonalne doradztwo, byś mógł podjąć najlepszą decyzję dla siebie..',
+		},
 		{
 			icon: <FaWarehouse />,
 			title: 'garaże z płyty warstwowej',
 			description:
 				'Nasza firma zajmuję się również w kompleksowym projektowaniem, dostosowywaniem, montażem oraz testowaniem nowoczesnych garaży z płyt warstwowych. ',
+			garage: true,
 		},
 	];
 
