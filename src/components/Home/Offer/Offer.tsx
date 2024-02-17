@@ -5,6 +5,8 @@ import { TbAirConditioning } from 'react-icons/tb';
 import { PiHandshakeFill } from 'react-icons/pi';
 import { FaTemperatureArrowUp, FaWarehouse } from 'react-icons/fa6';
 import { LuThermometerSnowflake } from 'react-icons/lu';
+import { FaPlugCircleBolt } from 'react-icons/fa6';
+import { GiSolarPower } from 'react-icons/gi';
 import OfferCard from './Card/OfferCard';
 import Divider from '@/components/UI/Section/Divider';
 type singleOffer = {
@@ -47,11 +49,23 @@ const Offer = () => {
 				'Jesteśmy specjalistami w zakresie instalacji pomp ciepła i zapewniamy kompleksową obsługę, od projektu aż po montaż, aby zapewnić Ci efektywność energetyczną i komfort.',
 		},
 		{
+			icon: <FaPlugCircleBolt />,
+			title: 'Instalacje elektryczne',
+			description:
+				'Zajmujemy się również kompleksowo instalacjami elektrycznymi. Nasza oferta obejmuje pełen zakres usług, począwszy od projektu, aż po finalne wykonanie instalacji.',
+		},
+		{
+			icon: <GiSolarPower />,
+			title: 'Fotowoltaika',
+			description:
+				'Nasza ekipa zajmuje się również kompleksowymi instalacjami fotowoltaicznymi, oferując pełen zakres usług od projektu do finalnego wykonania. ',
+		},
+
+		{
 			icon: <FaWarehouse />,
 			title: 'garaże z płyty warstwowej',
 			description:
 				'Nasza firma zajmuję się również w kompleksowym projektowaniem, dostosowywaniem, montażem oraz testowaniem nowoczesnych garaży z płyt warstwowych. ',
-			garage: true,
 		},
 	];
 
