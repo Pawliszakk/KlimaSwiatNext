@@ -48,7 +48,6 @@ const Offer = () => {
 			title: 'Instalacje elektryczne',
 			description:
 				'Zajmujemy się również kompleksowo instalacjami elektrycznymi. Nasza oferta obejmuje pełen zakres usług, począwszy od projektu, aż po finalne wykonanie instalacji.',
-			garage: true,
 		},
 
 		{
@@ -68,7 +67,6 @@ const Offer = () => {
 			title: 'garaże z płyty warstwowej',
 			description:
 				'Nasza firma zajmuję się również w kompleksowym projektowaniem, dostosowywaniem, montażem oraz testowaniem nowoczesnych garaży z płyt warstwowych. ',
-			garage: true,
 		},
 	];
 

@@ -30,3 +30,9 @@
 .box button.active {
 	background-color: var(--main-color-darker);
 }
+
+@media (max-height: 500px) {
+	.box {
+		display: none;
+	}
+}
