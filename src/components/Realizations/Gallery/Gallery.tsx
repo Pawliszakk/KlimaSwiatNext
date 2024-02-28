@@ -86,6 +86,7 @@ const Gallery = () => {
 					/>
 				</>
 			)}
+
 			<Divider darkBlue />
 		</section>
 	);

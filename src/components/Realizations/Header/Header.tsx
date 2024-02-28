@@ -1,14 +1,8 @@
-import { useContext } from 'react';
-import ThemeContext from '@/context/theme-context';
-
+import SpecialButton from '@/components/UI/Buttons/SpecialButton';
 import classes from './Header.module.css';
 import Divider from '@/components/UI/Section/Divider';
 
 const Header = () => {
-	const { isBlue } = useContext(ThemeContext);
-
-	const imageSrc = isBlue ? 'technican.JPG' : 'technican-gray.JPG';
-
 	return (
 		<header className={classes.header}>
 			<div className={classes.box}>
@@ -23,11 +17,15 @@ const Header = () => {
 				</div>
 				<div className={classes.image}>
 					<img
-						src={`/assets/ilustrations/${imageSrc}`}
+						src="/assets/ilustrations/technican-gray.JPG"
 						alt="Biało Niebieska Ilustracja technika klimatyzacji z kluczem na tle domu"
 					/>
 				</div>
 			</div>
+
+			<SpecialButton className={classes.button} href="/#contact">
+				Skontaktuj się!
+			</SpecialButton>
 
 			<Divider blue />
 		</header>

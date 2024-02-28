@@ -23,7 +23,6 @@ export default function Document() {
 					href="/favicon-16x16.png"
 				/>
 				<link rel="manifest" href="/favicon/site.webmanifest" />
-
 			</Head>
 			<body>
 				<div id="overlay-root"></div>

@@ -1,14 +1,12 @@
 import Link from 'next/link';
 import classes from './NavList.module.css';
-import ThemeIcon from '@/components/UI/Icons/ThemeIcon';
 
 interface NavListProps {
 	isOpen: boolean;
-	isMobile: boolean;
 	onToggle: () => void;
 }
 
-const NavList: React.FC<NavListProps> = ({ isOpen, onToggle, isMobile }) => {
+const NavList: React.FC<NavListProps> = ({ isOpen, onToggle }) => {
 	const navItems = [
 		{ name: 'O nas', href: '/#about' },
 		{ name: 'Oferta', href: '/#offer' },
@@ -23,11 +21,6 @@ const NavList: React.FC<NavListProps> = ({ isOpen, onToggle, isMobile }) => {
 						<Link href={item.href}>{item.name}</Link>
 					</li>
 				))}
-				{!isMobile && (
-					<li>
-						<ThemeIcon />
-					</li>
-				)}
 			</ul>
 		</div>
 	);
