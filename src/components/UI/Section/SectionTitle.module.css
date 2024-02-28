@@ -14,10 +14,10 @@
 }
 
 .blue {
-	color: var(--main-color-darker);
+	color: var(--main-cta);
 }
 .blue::before {
-	background-color: var(--main-color-darker);
+	background-color: var(--main-cta);
 }
 
 @media (min-width: 992px) {

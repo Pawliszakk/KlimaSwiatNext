@@ -28,7 +28,7 @@
 	font-size: 1px;
 }
 .box button.active {
-	background-color: var(--main-color-darker);
+	background-color: var(--main-cta);
 }
 
 @media (max-height: 500px) {

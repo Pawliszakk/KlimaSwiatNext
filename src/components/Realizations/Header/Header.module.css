@@ -15,14 +15,14 @@
 
 .content h1 {
 	position: relative;
-	color: var(--main-color-darker);
+	color: var(--main-cta);
 	font-size: 3rem;
 }
 .content h1::before {
 	position: absolute;
 	bottom: 0;
 	height: 2px;
-	background-color: var(--main-color-darker);
+	background-color: var(--main-cta);
 	width: 30px;
 	content: '';
 }
