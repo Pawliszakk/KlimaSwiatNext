@@ -258,8 +258,8 @@ const PrivacyPolicyPage = () => {
 							wpisywać loginu i hasła;
 						</li>
 						<li>
-							realizacji celów określonych powyżej w części "Istotne techniki
-							marketingowe";
+							realizacji celów określonych powyżej w części &quot;Istotne
+							techniki marketingowe&quot;;
 						</li>
 					</ul>
 				</li>

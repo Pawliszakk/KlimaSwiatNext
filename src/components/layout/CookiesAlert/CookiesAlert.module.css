@@ -1,0 +1,29 @@
+.box {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: var(--main-cta-darker);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+	color: #fff;
+	min-height: 70px;
+	z-index: 30;
+	padding: 3rem;
+}
+.box p {
+	font-size: 1.4rem;
+}
+.box button {
+	padding: 1em 2em;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	color: var(--purple);
+	font-weight: bold;
+}
+.box button:hover {
+	opacity: 0.8;
+}

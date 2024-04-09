@@ -1,5 +1,6 @@
 import { FaSnowflake } from 'react-icons/fa';
 import classes from './Footer.module.css';
+import Link from 'next/link';
 
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
@@ -20,6 +21,9 @@ const Footer = () => {
 					</a>
 				</p>
 			</div>
+			<Link className={classes.policy} href="/polityka-prywatnosci">
+				Polityka Prywatności
+			</Link>{' '}
 		</footer>
 	);
 };
