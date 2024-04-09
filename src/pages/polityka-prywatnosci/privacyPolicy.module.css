@@ -1,0 +1,50 @@
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 7vh auto;
+	padding: 3rem;
+	font-size: 1.3rem;
+}
+.box h1 {
+	font-size: 4rem;
+	margin: 2rem auto;
+}
+.box h2 {
+	margin: 1rem 0;
+	font-size: 3rem;
+}
+.box ul {
+	margin-left: 2em;
+	font-size: 1.1rem;
+}
+.box ol li {
+	margin: 0.5em 0;
+}
+
+@media (min-width: 992px) {
+	.box {
+		font-size: 1.5rem;
+	}
+
+	.box ul {
+		font-size: 1.3rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.box {
+		font-size: 1.8rem;
+	}
+	.box h1 {
+		font-size: 6rem;
+	}
+	.box h2 {
+		font-size: 4rem;
+	}
+	.box ul {
+		font-size: 1.4rem;
+	}
+}
