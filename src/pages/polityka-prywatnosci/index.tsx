@@ -82,7 +82,7 @@ const PrivacyPolicyPage = () => {
 			<ol>
 				<li>
 					Serwis jest hostowany (technicznie utrzymywany) na serwerach
-					operatora: inna firma
+					operatora: hostinger.com
 				</li>
 				<li>
 					Firma hostingowa w celu zapewnienia niezawodności technicznej prowadzi
